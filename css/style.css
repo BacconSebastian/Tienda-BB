@@ -108,21 +108,20 @@ article{
 }
 /*Lista opciones productos*/
 article ul{
-    display: flex;
+    display: inline-flex;
 }
 .lista_productos{
     overflow-x: auto;
+    margin-bottom: 1rem;
 }
 .lista_productos ul li{
-    display: flex;
-    align-items: center;
     margin-right: 0.5rem;
     color: var(--second_color);
     padding: 1rem;
     background-color: var(--first-color);
+    width: 14rem;
+}
+.lista_productos ul li:last-child{
+    margin-right: 0;
 }
 /*Imagenes*/
-.imagenes_productos img{
-    height: 100%;
-    width: 100%;
-}
