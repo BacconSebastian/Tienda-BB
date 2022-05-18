@@ -1,0 +1,128 @@
+
+/********************** GENERAL **********************/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Lato", sans-serif;
+    --first-color: #CCAC5C;
+    --second_color: white;
+    --third_color: #464344;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    font-style: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/********************** HEADER **********************/
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--first-color);
+    color: var(--second_color);
+}
+header i{
+    font-size: 2rem;
+    padding: 1rem;
+}
+header a{
+    color:  var(--second_color);
+}
+header h1{
+    width: 100%;
+}
+header button{
+    text-decoration: none;
+}
+.busqueda{
+    display: flex;
+    align-items: center;
+}
+.busqueda input{
+    width: auto;
+    height: 3rem;
+    color: var(--third_color);
+    border: 1px solid var(--third_color);
+    border-radius: 2rem;
+    padding: 0 2rem;
+}
+.btn{
+    border-radius: 2rem;
+    background-color: var(--third_color);
+    position: absolute;
+    top: -5;
+    right: 8px;
+}
+
+/********************** NAV **********************/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    color: var(--third_color);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 33%;
+    border-bottom: 2px solid var(--third_color);
+}
+nav a:hover{
+    border-bottom: 2px solid var(--first-color);
+}
+nav a span{
+    padding: 0.5rem;
+    color: var(--second_color);
+    background-color: var(--third_color);
+    border-radius: 3rem;
+}
+
+/********************** ARTICLE **********************/
+
+article{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+/*Imagen BB*/
+.imagen_BB{
+    margin: 1rem 0rem;
+}
+.imagen_BB img{
+    height: 60px;
+}
+/*Lista opciones productos*/
+article ul{
+    display: flex;
+}
+.lista_productos{
+    overflow-x: auto;
+}
+.lista_productos ul li{
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    color: var(--second_color);
+    padding: 1rem;
+    background-color: var(--first-color);
+}
+/*Imagenes*/
+.imagenes_productos img{
+    height: 100%;
+    width: 100%;
+}
