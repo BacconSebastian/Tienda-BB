@@ -8,6 +8,7 @@ html{
     --first-color: #CCAC5C;
     --second_color: white;
     --third_color: #464344;
+    --fourth_color: rgb(244, 244, 244);
 }
 *,
 *:before,
@@ -17,13 +18,25 @@ html{
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
+h2{
+    color: var(--third_color);
+    font-size: 1.75rem;
+    text-shadow: 0.5px 0.5px var(--third_color);
+}
 a{
     text-decoration: none;
     font-style: none;
+    color: var(--second_color);
+}
+p{
+    margin: 0.5rem;
 }
 ul{
     list-style: none;
     padding: 0;
+}
+.container{
+    padding: 1rem;
 }
 
 /********************** HEADER **********************/
@@ -35,37 +48,43 @@ header{
     background-color: var(--first-color);
     color: var(--second_color);
 }
-header i{
-    font-size: 2rem;
-    padding: 1rem;
-}
-header a{
-    color:  var(--second_color);
+#titulo{
+    padding: 0 6rem 0 1rem;
 }
 header h1{
-    width: 100%;
+    text-shadow: 1px 1px 3px var(--third_color);
+    width: 60%;
 }
 header button{
     text-decoration: none;
 }
 .busqueda{
+    box-shadow: 0.5px 0.5px 4px var(--third_color);
+    background-color: var(--second_color);
+    border-radius: 20px;
+    position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
+}
+.busqueda i{
+    position: absolute;
+    top: 5;
+    right: 0;
+    color: var(--third_color);
+    font-size: 2rem;
+    padding: 0.25rem 1rem;
+    border-left: 1px solid var(--third_color);
 }
 .busqueda input{
-    width: auto;
+    font-size: 1.25rem;
+    justify-content: flex-start;
+    border-radius: 20px;
+    width: 100%;
     height: 3rem;
     color: var(--third_color);
-    border: 1px solid var(--third_color);
-    border-radius: 2rem;
-    padding: 0 2rem;
-}
-.btn{
-    border-radius: 2rem;
-    background-color: var(--third_color);
-    position: absolute;
-    top: -5;
-    right: 8px;
+    border: none;
+    padding: 0 5rem 0 2rem;
 }
 
 /********************** NAV **********************/
@@ -78,7 +97,7 @@ nav a{
     color: var(--third_color);
     text-align: center;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 33%;
     border-bottom: 2px solid var(--third_color);
 }
@@ -97,14 +116,6 @@ nav a span{
 article{
     display: block;
     text-align: center;
-    padding: 1rem;
-}
-/*Imagen BB*/
-.imagen_BB{
-    margin: 1rem 0rem;
-}
-.imagen_BB img{
-    height: 60px;
 }
 /*Lista opciones productos*/
 article ul{
@@ -112,7 +123,6 @@ article ul{
 }
 .lista_productos{
     overflow-x: auto;
-    margin-bottom: 1rem;
 }
 .lista_productos ul li{
     margin-right: 0.5rem;
@@ -125,3 +135,37 @@ article ul{
     margin-right: 0;
 }
 /*Imagenes*/
+.imagenes_productos{
+    padding: 1rem;
+    background-color: var(--fourth_color);
+}
+.imagenes_productos img{
+    border: 1px solid var(--first-color);
+    border-radius: 2px;
+    width: 10rem;
+    height: 10rem;
+    margin: 5px;
+}
+/*Productos destacados*/
+.productos_destacados h2{
+    padding: 2rem;
+    border-top: 2px solid var(--fourth_color);
+    border-bottom: 2px solid var(--fourth_color);
+}
+.grilla_productos{
+    justify-content: space-between;
+    padding: 1rem;
+}
+.producto{
+    display: inline-block;
+    text-align: center;
+    width: 15rem;
+    padding: 1rem;
+    border: 0.5px solid var(--fourth_color);
+    margin: 0.5rem;
+    border-radius: 2px;
+}
+.producto img{
+    width: 12.5rem;
+    height: 12.5rem;
+}
