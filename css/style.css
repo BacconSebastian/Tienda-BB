@@ -1,4 +1,8 @@
 
+
+
+/******************************************** INICIO ********************************************/
+
 /********************** GENERAL **********************/
 
 html{
@@ -243,7 +247,7 @@ footer h4{
     display: flex;
     border-top: 1px solid var(--first-color);
     border-bottom: 1px solid var(--first-color);
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1.25rem;
 }
 .contactos_footer a{
@@ -261,7 +265,32 @@ footer h4{
 }
 footer p{
     margin: 0 8rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border-bottom: 1px solid var(--first-color);
     font-size: 1.25rem;
+}
+
+
+
+/******************************************** PRODUCTOS ********************************************/
+
+/********************** CATALOGO GENERAL **********************/
+
+.catalogo_productos a{
+    font-size: 1.15rem;
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 2rem 1rem;
+    color: var(--third_color);
+    border-top: 2px solid var(--fourth_color);
+}
+.catalogo_productos a:first-child{
+    border-top: 0;
+}
+.catalogo_productos a:last-child{
+    border-bottom: 2px solid var(--fourth_color);
+}
+.catalogo_productos a:hover{
+    color: var(--first-color);
 }
