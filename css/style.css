@@ -135,6 +135,41 @@ article{
     display: block;
     text-align: center;
 }
+/*Imagenes corredizas*/
+.imagenes_corredizas{
+    color: var(--first-color);
+    padding: 4rem 0rem 2rem 0rem;
+}
+.imagenes_corredizas i{
+    font-size: 2rem;
+}
+.imagenes_corredizas h5{
+    font-size: 1.15rem;
+}
+.imagen_uno, .imagen_dos{
+    display: none;
+}
+.imagen_uno.active{
+    display: block;
+    height: 10rem;
+    padding-top: 2rem;
+}
+.imagen_dos.active{
+    display: block;
+    height: 10rem;
+    padding-top: 2rem;
+}
+.puntos{
+    padding-top: 1rem;
+}
+.puntos button{
+    border: 0;
+    font-size: 0;
+    background-color: var(--first-color);
+    padding: 0.35rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
 /*Lista opciones productos*/
 article ul{
     display: inline-flex;
