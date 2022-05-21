@@ -35,6 +35,7 @@ a{
 }
 p{
     margin: 0.5rem;
+    font-size: 1.25rem;
 }
 ul{
     list-style: none;
@@ -49,9 +50,14 @@ ul{
 header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1.5rem;
     background-color: var(--first-color);
     color: var(--second_color);
+    height: 6rem;
+}
+header.inactive{
+    display: none;
 }
 header a{
     padding-left: 0.5rem;
@@ -63,23 +69,65 @@ header h1{
     text-shadow: 0.1px 0.1px var(--third_color);
     width: 20rem;
 }
-header button{
-    text-decoration: none;
+.corrector_header{
+    display: none;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--second_color);
+}
+.corrector_header.active{
+    display: block;
 }
 .busqueda{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.busqueda i{
     position: absolute;
     top: 5;
     right: 0;
+    display: flex;
+    align-items: center;
+    margin: 0rem 2rem 0rem 2rem;
+    padding: 0;
+    background-color: var(--first-color);
+    border-radius: 100%;
+    border: 0;
+}
+.busqueda i{
     color: var(--second_color);
-    font-size: 2rem;
-    padding: 0.25rem 2rem 0.25rem 1rem;
+    font-size: 3rem;
     cursor: pointer;
+}
+.busqueda_desplegada{
+    opacity: 0;
+    background-color: var(--second_color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid var(--third_color);
+    transition: all 0.25s ease;
+}
+.busqueda_desplegada.active{
+    opacity: 1;
+}
+.busqueda_desplegada input{
+    font-size: 1.5rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 1rem 8rem 1rem 2rem;
+}
+.busqueda_desplegada i{
+    font-size: 3rem;
+    color: var(--third_color);
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    padding: 0rem 2rem 0rem 2rem;
+    border-left: 1px solid var(--third_color);
+}
+.busqueda_desplegada.none{
+    opacity: 0;
 }
 
 /********************** NAV **********************/
@@ -89,13 +137,13 @@ nav{
     justify-content: space-between;
     transition: all 0.25s ease-in;
 }
-.corrector{
+.corrector_nav{
     display: none;
     background-color: var(--second_color);
     height: 4.4rem;
     width: 100%;
 }
-.corrector.active{
+.corrector_nav.active{
     display: flex;
 }
 .nav.active{
@@ -150,14 +198,14 @@ article{
     display: none;
 }
 .imagen_uno.active{
-    display: block;
     height: 10rem;
     padding-top: 2rem;
+    display: block;
 }
 .imagen_dos.active{
-    display: block;
     height: 10rem;
     padding-top: 2rem;
+    display: block;
 }
 .puntos{
     padding-top: 1rem;
@@ -174,9 +222,13 @@ article{
 article ul{
     display: inline-flex;
 }
-article h3{
+.precio{
+    font-weight: bold;
+    color: var(--third_color);
+}
+.producto h3{
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 .lista_productos{
     overflow-x: auto;
@@ -226,6 +278,12 @@ article h3{
     margin: 0.5rem;
     border-radius: 2px;
 }
+.producto h3{
+    color: var(--third_color);
+}
+.producto p{
+    color: var(--third_color);
+}
 .producto img{
     width: 12.5rem;
     height: 12.5rem;
@@ -251,9 +309,50 @@ article h3{
 .kits{
     padding: 1rem 0 2rem;
 }
-.kits h3{
+.kits h2{
     font-size: 2rem;
 }
+.productos_kits{
+    padding: 2rem;
+    border: 2px solid var(--fourth_color);
+    margin: 2rem 3rem 0rem 3rem;
+    width: 30rem;
+    height: 32rem;
+}
+.productos_kits a h3{
+    color: var(--third_color);
+}
+.productos_kits a p{
+    color: var(--third_color);
+}
+.kit img{
+    width: 20rem;
+    height: 20rem;
+}
+.kit h3{
+    font-size: 1.5rem;
+}
+.kit.primero, .kit.segundo, .kit.tercero{
+    display: block;
+}
+.kit.primero.inactive ,.kit.segundo.inactive, .kit.tercero.inactive{
+    display: none;
+}
+.punto_uno.active, .punto_dos.active, .punto_tres.active{
+    background-color: var(--second_color);
+    border: 1px solid var(--first-color);
+}
+.punto_uno, .punto_dos, .punto_tres{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0rem 0.25rem;
+    margin: 0rem 1rem;
+    background-color: var(--first-color);
+    border: 1px solid var(--first-color);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
 
 /********************** FOOTER **********************/
 

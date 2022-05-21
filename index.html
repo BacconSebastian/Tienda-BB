@@ -13,18 +13,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="busqueda_desplegada">
+        <input type="text" placeholder="Buscá productos, kits, y más...">
+        <i onclick="desplegar()" class="fa-solid fa-xmark"></i>
+    </div>
     <header>
-        <a href="#"><h1>Beauty Blonde</h1></a>
-        <div class="busqueda">
+        <a href="index.html"><h1>Beauty Blonde</h1></a>
+        <button onclick="desplegar()" class="busqueda">
             <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        </button>
     </header>
+    <div class="corrector_header"></div>
     <nav class="nav">
         <a href="index.html" style="border-bottom: 2px solid #CCAC5C;">INICIO</a>
         <a href="productos.html">PRODUCTOS</a>
         <a href="#">CARRITO <span id="productos_carrito">0</span></a>
     </nav>
-    <div class="corrector"></div>
+    <div class="corrector_nav"></div>
     <article>
         <div class="imagenes_corredizas">
             <div class="imagen_uno active">
@@ -65,36 +70,61 @@
         <div class="productos_destacados">
             <h2>PRODUCTOS DESTACADOS</h2>
             <div class="grilla_productos">
-                <div class="producto">
+                <a href="#" class="producto">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/olaplex_1080x1080_tn-11-d612d562c6178a142615881068554079-240-01-4fd362c25e210d5d2415897502789841-320-0.png">
                     <h3>COMBO ESPECIAL</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
-                </div>
-                <div class="producto">
+                </a>
+                <a href="#" class="producto">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-27t130215-6731-5d62f287094c3a83cc15880072454611-320-0.png">
                     <h3>COMBO ESPECIAL</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
-                </div>
-                <div class="producto">
+                </a>
+                <a href="#" class="producto">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/olaplex_1080x1080_tn-11-d612d562c6178a142615881068554079-240-01-4fd362c25e210d5d2415897502789841-320-0.png">
                     <h3>COMBO ESPECIAL</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
-                </div>
-                <div class="producto">
+                </a>
+                <a href="#" class="producto">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-27t130215-6731-5d62f287094c3a83cc15880072454611-320-0.png">
                     <h3>COMBO ESPECIAL</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
-                </div>
+                </a>
             </div>
             <a href="#" class="btn">VER TODOS LOS PRODUCTOS</a>
         </div>
         <div class="kits">
-            <h3>KITS</h3>
+            <h2>KITS</h2>
             <p>¡Conocé los kits que tenemos en nuestras tiendas!</p>
+            <div class="productos_kits">
+                <a href="#" class="kit primero">
+                    <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t172705-85211-c354c575ee7841f4fb15881932067136-320-0.png">
+                    <h3>KIT DE REPARACIÓN Y NUTRICIÓN</h3>
+                    <p class="precio">$16.500</p>
+                    <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
+                </a>
+                <a href="#" class="kit segundo inactive">
+                    <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t173227-4051-0590d07363cd1515b815881929633402-320-0.png">
+                    <h3>KIT KERATINA</h3>
+                    <p class="precio">$16.500</p>
+                    <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
+                </a>
+                <a href="#" class="kit tercero inactive">
+                    <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/85211241_2566341700279955_4556114935528030208_o1-27b964c26c1e8395c815903327833011-320-0.png">
+                    <h3>KIT OLAPLEX</h3>
+                    <p class="precio">$16.500</p>
+                    <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
+                </a>
+            </div>
+            <ul class="puntos">
+                <div onclick="toggleUno()" class="punto_uno active"></div>
+                <div onclick="toggleDos()" class="punto_dos"></div>
+                <div onclick="toggleTres()" class="punto_tres"></div>
+            </ul>
         </div>
     </article>
     <footer>
