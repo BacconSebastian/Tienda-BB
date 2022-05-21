@@ -47,7 +47,7 @@ ul{
 
 /********************** HEADER **********************/
 
-header{
+.index{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,14 +56,14 @@ header{
     color: var(--second_color);
     height: 6rem;
 }
-header.inactive{
+.index.inactive{
     display: none;
 }
-header a{
+.index a{
     padding-left: 0.5rem;
     width: 17.5rem;
 }
-header h1{
+.index h1{
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     text-shadow: 0.1px 0.1px var(--third_color);
@@ -427,4 +427,39 @@ footer p{
 }
 .catalogo_productos a:hover{
     color: var(--first-color);
+}
+
+
+
+/******************************************** CARRITO ********************************************/
+
+/********************** General **********************/
+
+.carrito{
+    display: flex;
+    background-color: var(--fourth_color);
+    height: 6rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.carrito h1{
+    color: var(--third_color);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
+}
+.carrito i{
+    font-size: 3rem;
+    padding: 0rem 2rem;
+}
+.carrito a{
+    color: var(--third_color);
+}
+.carrito_vacio{
+    border: 1px solid var(--first-color);
+    padding: 1rem 0rem;
+    color: var(--first-color);
+}
+.carrito_vacio h3{
+    font-weight: 400;
 }

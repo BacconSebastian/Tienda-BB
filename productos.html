@@ -13,18 +13,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a href="#"><h1>Beauty Blonde</h1></a>
-        <div class="busqueda">
+    <div class="busqueda_desplegada">
+        <input type="text" placeholder="Buscá productos, kits, y más...">
+        <i onclick="desplegar()" class="fa-solid fa-xmark"></i>
+    </div>
+    <header class="index">
+        <a href="index.html"><h1>Beauty Blonde</h1></a>
+        <button onclick="desplegar()" class="busqueda">
             <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        </button>
     </header>
+    <div class="corrector_header"></div>
     <nav class="nav">
-        <a href="index.html">INICIO</a>
-        <a href="#" style="border-bottom: 2px solid #CCAC5C;">PRODUCTOS</a>
-        <a href="#">CARRITO <span id="productos_carrito">0</span></a>
+        <a href="index.html"">INICIO</a>
+        <a href="productos.html" style="border-bottom: 2px solid #CCAC5C;">PRODUCTOS</a>
+        <a href="carrito.html">CARRITO <span id="productos_carrito">0</span></a>
     </nav>
-    <div class="corrector"></div>
+    <div class="corrector_nav"></div>
     <article class="catalogo_productos">
         <a href="#">VER TODOS LOS PRODUCTOS</a>
         <a href="#">OLAPLEX</a>
