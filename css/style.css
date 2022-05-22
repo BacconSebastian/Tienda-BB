@@ -96,7 +96,7 @@ ul{
     cursor: pointer;
 }
 .busqueda_desplegada{
-    opacity: 0;
+    display: none;
     background-color: var(--second_color);
     position: fixed;
     top: 0;
@@ -107,7 +107,7 @@ ul{
     transition: all 0.25s ease;
 }
 .busqueda_desplegada.active{
-    opacity: 1;
+    display: block;
 }
 .busqueda_desplegada input{
     font-size: 1.5rem;
@@ -315,7 +315,7 @@ article ul{
 .productos_kits{
     padding: 2rem;
     border: 2px solid var(--fourth_color);
-    margin: 2rem 3rem 0rem 3rem;
+    margin: 2rem auto 0rem auto;
     width: 30rem;
     height: 32rem;
 }
@@ -379,6 +379,7 @@ footer h4{
 }
 .contactos_footer{
     display: flex;
+    justify-content: center;
     border-top: 1px solid var(--first-color);
     border-bottom: 1px solid var(--first-color);
     padding: 0.5rem;
@@ -408,7 +409,7 @@ footer p{
 
 /******************************************** PRODUCTOS ********************************************/
 
-/********************** CATALOGO GENERAL **********************/
+/********************** Catalogo general **********************/
 
 .catalogo_productos a{
     font-size: 1.15rem;
@@ -427,6 +428,13 @@ footer p{
 }
 .catalogo_productos a:hover{
     color: var(--first-color);
+}
+
+/********************** Productos individuales **********************/
+
+.productos_individuales{
+    background-color: var(--first-color);
+    padding: 1rem;
 }
 
 
