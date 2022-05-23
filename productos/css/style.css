@@ -192,7 +192,7 @@ article #imagen_producto{
     width: 100%;
 }
 .inicio_olaplex{
-    background-color: #fff7e4;
+    background-color: var(--second_color);
     font-size: 1.25rem;
     display: flex;
     padding: 1rem 0rem;
