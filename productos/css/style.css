@@ -183,6 +183,7 @@ article{
     text-align: center;
 }
 article #imagen_BB{
+    margin: 2rem 0rem;
     padding: 2rem 1rem;
     width: 15rem;
     height: 10rem;
@@ -191,26 +192,31 @@ article #imagen_producto{
     width: 100%;
 }
 .inicio_olaplex{
+    background-color: #fff7e4;
+    font-size: 1.25rem;
     display: flex;
     padding: 1rem 0rem;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid var(--fourth_color);
+    border-bottom: 2px solid var(--first-color);
+    border-top: 2px solid var(--first-color);
 }
 .inicio_olaplex a{
     color: var(--third_color);
     margin: 1rem;
 }
 .inicio_olaplex span{
+    color: var(--third_color);
     margin: 1rem;
 }
 .inicio_olaplex h3{
     margin: 1rem;
-    color: var(--first-color);
+    color: var(--third_color);
 }
 .grilla_productos{
     justify-content: space-between;
     padding: 1rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 .producto{
@@ -231,6 +237,10 @@ article #imagen_producto{
 .producto img{
     width: 12.5rem;
     height: 12.5rem;
+}
+.precio{
+    font-weight: bold;
+    color: var(--third_color);
 }
 
 /********************** FOOTER **********************/

@@ -249,6 +249,7 @@ article ul{
     background-color: var(--fourth_color);
 }
 .imagenes_productos img{
+    box-shadow: 1px 1px 5px var(--third_color);
     border: 1px solid var(--first-color);
     border-radius: 2px;
     width: 10rem;
