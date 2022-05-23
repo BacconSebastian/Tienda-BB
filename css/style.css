@@ -385,6 +385,7 @@ footer h4{
     border-bottom: 1px solid var(--first-color);
     padding: 0.5rem;
     font-size: 1.25rem;
+    flex-wrap: wrap;
 }
 .contactos_footer a{
     transition: all 0.5s ease;
@@ -398,6 +399,12 @@ footer h4{
 }
 .contactos_footer a:last-child{
     border: 0;
+}
+footer #direccion{
+    padding: 0;
+}
+footer #direccion:hover{
+    color: #e4cd94;
 }
 footer p{
     margin: 0 8rem;
