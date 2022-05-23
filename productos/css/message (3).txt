@@ -191,8 +191,8 @@ article #imagen_BB{
 article #imagen_producto{
     width: 100%;
 }
-.inicio_producto{
-    background-color: var(--second_color);
+.inicio_olaplex{
+    background-color: #fff7e4;
     font-size: 1.25rem;
     display: flex;
     padding: 1rem 0rem;
@@ -201,19 +201,20 @@ article #imagen_producto{
     border-bottom: 2px solid var(--first-color);
     border-top: 2px solid var(--first-color);
 }
-.inicio_producto a{
+.inicio_olaplex a{
     color: var(--third_color);
     margin: 1rem;
 }
-.inicio_producto span{
+.inicio_olaplex span{
     color: var(--third_color);
     margin: 1rem;
 }
-.inicio_producto h3{
+.inicio_olaplex h3{
     margin: 1rem;
     color: var(--third_color);
 }
 .grilla_productos{
+    justify-content: space-between;
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -221,12 +222,12 @@ article #imagen_producto{
 .producto{
     display: inline-block;
     text-align: center;
+    justify-content: flex-start;
     width: 15rem;
     padding: 1rem;
     border: 0.5px solid var(--fourth_color);
     margin: 0.5rem;
     border-radius: 2px;
-    box-shadow: 0.15px 0.15px 6px var(--third_color);
 }
 .producto h3{
     color: var(--third_color);
@@ -241,6 +242,10 @@ article #imagen_producto{
 .precio{
     font-weight: bold;
     color: var(--third_color);
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /********************** FOOTER **********************/
@@ -287,18 +292,14 @@ footer h4{
 .contactos_footer a:last-child{
     border: 0;
 }
-footer #direccion{
-    padding: 0;
-}
-footer #direccion:hover{
-    color: #e4cd94;
-}
 footer p{
     margin: 0 8rem;
     padding: 1.5rem;
     border-bottom: 1px solid var(--first-color);
     font-size: 1.25rem;
 }
+
+/********************** Ossono **********************/
 .divisores{
     margin: 1rem;
     padding: 1rem;
