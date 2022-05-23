@@ -191,7 +191,7 @@ article #imagen_BB{
 article #imagen_producto{
     width: 100%;
 }
-.inicio_olaplex{
+.inicio_producto{
     background-color: var(--second_color);
     font-size: 1.25rem;
     display: flex;
@@ -201,15 +201,15 @@ article #imagen_producto{
     border-bottom: 2px solid var(--first-color);
     border-top: 2px solid var(--first-color);
 }
-.inicio_olaplex a{
+.inicio_producto a{
     color: var(--third_color);
     margin: 1rem;
 }
-.inicio_olaplex span{
+.inicio_producto span{
     color: var(--third_color);
     margin: 1rem;
 }
-.inicio_olaplex h3{
+.inicio_producto h3{
     margin: 1rem;
     color: var(--third_color);
 }
@@ -298,4 +298,13 @@ footer p{
     padding: 1.5rem;
     border-bottom: 1px solid var(--first-color);
     font-size: 1.25rem;
+}
+.divisores{
+    margin: 1rem;
+    padding: 1rem;
+    background-color:var(--first-color);
+    box-shadow: 1px 1px 2px black;
+}
+.divisores h3{
+    color: white;
 }

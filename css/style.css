@@ -419,6 +419,9 @@ footer p{
 
 /********************** Catalogo general **********************/
 
+.catalogo_productos{
+    margin-bottom: 50rem;
+}
 .catalogo_productos a{
     font-size: 1.15rem;
     text-align: left;
