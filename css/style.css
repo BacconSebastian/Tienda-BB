@@ -28,6 +28,11 @@ h2{
     font-size: 1.75rem;
     margin: 1rem 0;
 }
+@media (min-width:768px) {
+    h2{
+        font-size: 2rem;
+    }
+}
 a{
     text-decoration: none;
     font-style: none;
@@ -43,6 +48,9 @@ ul{
 }
 .container{
     padding: 2rem 1rem;
+}
+.productos_index{
+    border-top: 2px solid var(--fourth_color);
 }
 
 /********************** HEADER **********************/
@@ -186,7 +194,7 @@ article{
 /*Imagenes corredizas*/
 .imagenes_corredizas{
     color: var(--first-color);
-    padding: 4rem 0rem 2rem 0rem;
+    padding: 3rem 0rem 3rem 0rem;
 }
 .imagenes_corredizas i{
     font-size: 2rem;
@@ -194,29 +202,32 @@ article{
 .imagenes_corredizas h5{
     font-size: 1.15rem;
 }
-.imagen_uno, .imagen_dos{
+.imagen_uno, .imagen_dos, .imagen_tres{
     display: none;
 }
-.imagen_uno.active{
+.imagen_uno.active, .imagen_dos.active, .imagen_tres.active{
     height: 10rem;
     padding-top: 2rem;
     display: block;
 }
-.imagen_dos.active{
-    height: 10rem;
-    padding-top: 2rem;
-    display: block;
-}
-.puntos{
-    padding-top: 1rem;
-}
-.puntos button{
-    border: 0;
-    font-size: 0;
-    background-color: var(--first-color);
-    padding: 0.35rem;
-    border-radius: 1rem;
-    margin: 0.5rem;
+@media (min-width:768px) {
+    .imagenes_corredizas{
+        display: flex;
+        justify-content: center;
+    }
+    .imagen_uno, .imagen_dos, .imagen_tres{
+        display: block;
+        height: 10rem;
+        padding: 0rem 4rem;
+        margin: 2rem 0rem;
+        width: 30rem;
+    }
+    .imagen_uno.active, .imagen_dos.active, .imagen_tres.active{
+        display: block;
+        height: 10rem;
+        padding: 0rem 4rem;
+        margin: 2rem 0rem;
+    }
 }
 /*Lista opciones productos*/
 article ul{
@@ -231,17 +242,38 @@ article ul{
     font-size: 1.25rem;
 }
 .lista_productos{
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 .lista_productos ul li{
-    margin-right: 0.5rem;
     color: var(--second_color);
     padding: 1rem;
     background-color: var(--first-color);
     width: 14rem;
 }
-.lista_productos ul li:last-child{
-    margin-right: 0;
+.lista_productos ul a{
+    margin-right: 0.5rem;
+}
+.lista_productos ul a:last-child{
+    margin-right: 0.5rem;
+}
+@media (min-width:768px) {
+    .lista_productos ul li{
+        width: 22rem;
+        font-size: 1.5rem;
+    }
+    .lista_productos a{
+        border: 2px solid var(--first-color);
+        transition: all 0.5s ease;
+    }
+    .lista_productos a:hover{
+        border: 2px solid var(--first-color);
+        transition: all 0.5s ease;
+    }
+    .lista_productos a:hover li{
+        background-color: var(--second_color);
+        color: var(--first-color);
+        transition: all 0.5s ease;
+    }
 }
 /*Imagenes*/
 .imagenes_productos{
@@ -249,12 +281,26 @@ article ul{
     background-color: var(--fourth_color);
 }
 .imagenes_productos img{
-    box-shadow: 1px 1px 5px var(--third_color);
+    box-shadow: 1px 1px 5px var(--first-color);
     border: 1px solid var(--first-color);
     border-radius: 2px;
     width: 10rem;
     height: 10rem;
     margin: 5px;
+}
+@media (min-width:768px){
+    .imagenes_productos{
+        padding: 2rem;
+    }
+    .imagenes_productos img{
+        width: 17.5rem;
+        height: 17.5rem;
+        transition: all 0.25s ease-in-out;
+        overflow: hidden;
+    }
+    .imagenes_productos img:hover{
+        transform: scale(1.1);
+    }
 }
 /*Productos destacados*/
 .productos_destacados{
@@ -262,8 +308,8 @@ article ul{
     border-bottom: 2px solid var(--fourth_color);
 }
 .productos_destacados h2{
+    margin: 0;
     padding: 2rem;
-    border-top: 2px solid var(--fourth_color);
     border-bottom: 2px solid var(--fourth_color);
 }
 .grilla_productos{
@@ -279,15 +325,33 @@ article ul{
     margin: 0.5rem;
     border-radius: 2px;
 }
-.producto h3{
-    color: var(--third_color);
-}
-.producto p{
+.producto h3, .producto .precio, .producto .cuotas{
     color: var(--third_color);
 }
 .producto img{
     width: 12.5rem;
     height: 12.5rem;
+}
+@media (min-width:768px){
+    .grilla_productos{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .grilla_productos .producto{
+        margin: 1rem;
+        width: 30rem;
+        padding: 3rem;
+        transition: all 0.5s ease;
+    }
+    .grilla_productos .producto:hover{
+        box-shadow: 1px 1px 5px var(--first-color);
+    }
+    .grilla_productos h3{
+        margin-top: 2rem;
+    }
+    .grilla_productos h3, .grilla_productos p{
+        font-size: 1.50rem;
+    }
 }
 /*Boton todos los productos*/
 .btn{
@@ -306,24 +370,30 @@ article ul{
     border: 2px solid var(--third_color);
     color: var(--third_color);
 }
+@media (min-width:768px) {
+    .btn{
+        margin: 1rem 30rem;
+    }
+}
 /*Apartado kits*/
 .kits{
-    padding: 1rem 0 2rem;
+    padding-top: 1rem;
+    margin-bottom: 4rem;
 }
 .kits h2{
     font-size: 2rem;
 }
+.productos_kits_web{
+    display: none;
+}
 .productos_kits{
     padding: 2rem;
+    padding-bottom: 0;
     border: 2px solid var(--fourth_color);
+    border-bottom: 0;
     margin: 2rem auto 0rem auto;
-    width: 30rem;
-    height: 32rem;
 }
-.productos_kits a h3{
-    color: var(--third_color);
-}
-.productos_kits a p{
+.productos_kits a .precio, .productos_kits a .cuotas{
     color: var(--third_color);
 }
 .kit img{
@@ -332,12 +402,16 @@ article ul{
 }
 .kit h3{
     font-size: 1.5rem;
+    margin-top: 2rem;
 }
 .kit.primero, .kit.segundo, .kit.tercero{
     display: block;
 }
 .kit.primero.inactive ,.kit.segundo.inactive, .kit.tercero.inactive{
     display: none;
+}
+.puntos{
+    margin: 2rem 0rem;
 }
 .punto_uno.active, .punto_dos.active, .punto_tres.active{
     background-color: var(--second_color);
@@ -352,6 +426,30 @@ article ul{
     border: 1px solid var(--first-color);
     border-radius: 100%;
     cursor: pointer;
+}
+@media (min-width:768px) {
+    .productos_kits{
+        display: none;
+    }
+    .productos_kits_web{
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 4rem 0;
+    }
+    .kit.primero, .kit.segundo, .kit.tercero{
+        width: 30rem;
+        height: 35rem;
+        padding: 3rem 2rem;
+        margin: 1rem;
+        border: 1px solid var(--fourth_color);
+        transition: all 0.5s ease;
+    }
+    .kit.primero:hover, .kit.segundo:hover, .kit.tercero:hover{
+        box-shadow: 1px 1px 5px var(--first-color);
+    }
+    .kit h3, .kit .precio, .kit .cuotas{
+        color: var(--third_color);
+    }
 }
 
 
@@ -374,6 +472,14 @@ footer a{
 .iconos_footer{
     font-size: 3rem;
 }
+@media (min-width:768px){
+    .iconos_footer i{
+        transition: all 0.5s ease;
+    }
+    .iconos_footer i:hover{
+        color: #e4cd94;
+    }
+}
 footer h4{
     font-size: 1.5rem;
     padding: 2rem 0 1rem 0;
@@ -394,11 +500,8 @@ footer h4{
 .contactos_footer a:hover{
     color: #e4cd94;
 }
-.contactos_footer a{
+.contactos_footer a:first-child{
     border-right: 1px solid var(--first-color);
-}
-.contactos_footer a:last-child{
-    border: 0;
 }
 footer #direccion{
     padding: 0;
@@ -406,11 +509,37 @@ footer #direccion{
 footer #direccion:hover{
     color: #e4cd94;
 }
+footer #direccion_web{
+    border: 0;
+    display: none;
+}
 footer p{
     margin: 0 8rem;
     padding: 1.5rem;
     border-bottom: 1px solid var(--first-color);
     font-size: 1.25rem;
+}
+@media (min-width:768px){
+    footer #direccion{
+        display: none;
+    }
+    footer #direccion_web{
+        display: block;
+    }
+    footer p{
+        padding: 0;
+        border: 0;
+        margin: 0;
+    }
+    .contactos_footer a{
+        border-right: 1px solid var(--first-color);
+        padding: 0.5rem 1rem;
+    }
+    .contactos_footer{
+        margin: 0 10rem;
+        padding: 1rem 5rem;
+        border: 0;
+    }
 }
 
 
