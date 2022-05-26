@@ -84,3 +84,9 @@ function toggleTres(){
 }
 
 /***********************************************************/
+
+const nav_inicio = document.querySelector('.nav_inicio')
+
+function toggleInicio(){
+
+}

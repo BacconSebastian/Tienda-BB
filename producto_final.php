@@ -1,13 +1,5 @@
 <?php include 'includes/header.php' ?>
 
-    <nav class="nav">
-        <a href="../index.php" style="border-bottom: 2px solid #CCAC5C;">INICIO</a>
-        <a href="../productos.php">PRODUCTOS</a>
-        <a href="carrito.php">CARRITO <span id="productos_carrito">0</span></a>
-    </nav>
-
-    <div class="corrector_nav"></div>
-
     <article class="producto_final">
         <div class="encuadrar">
             <div class="info_producto">

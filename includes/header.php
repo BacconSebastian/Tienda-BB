@@ -29,8 +29,8 @@
     <div class="corrector_header"></div>
 
     <nav class="nav">
-        <a href="index.php" style="border-bottom: 2px solid #CCAC5C;">INICIO</a>
-        <a href="productos.php">PRODUCTOS</a>
+        <a class="nav_inicio" href="index.php" onclick="toggleInicio()">INICIO</a>
+        <a class="nav_productos" href="productos.php" onclick="toggleProductos()">PRODUCTOS</a>
         <a href="carrito.php">CARRITO <span id="productos_carrito">0</span></a>
     </nav>
 
