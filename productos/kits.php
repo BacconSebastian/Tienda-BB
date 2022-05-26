@@ -19,97 +19,59 @@
         <i onclick="desplegar()" class="fa-solid fa-xmark"></i>
     </div>
     <header class="individual">
-        <a href="https://beautyblonde.netlify.app/index.html"><h1>Beauty Blonde</h1></a>
+        <a href="../index.php"><h1>Beauty Blonde</h1></a>
         <button onclick="desplegar()" class="busqueda">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </header>
     <div class="corrector_header"></div>
     <nav class="nav">
-        <a href="https://beautyblonde.netlify.app/index.html">INICIO</a>
-        <a href="https://beautyblonde.netlify.app/productos.html" style="border-bottom: 2px solid #CCAC5C;">PRODUCTOS</a>
-        <a href="https://beautyblonde.netlify.app/carrito.html">CARRITO <span id="productos_carrito">0</span></a>
+        <a href="../index.php">INICIO</a>
+        <a href="../productos.php" style="border-bottom: 2px solid #CCAC5C;">PRODUCTOS</a>
+        <a href="../carrito.php">CARRITO <span id="productos_carrito">0</span></a>
     </nav>
     <div class="corrector_nav"></div>
     <article>
         <img id="imagen_BB" src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/themes/common/logo-1912906712-1638404992-8c28f8e847fe06ba534dff5d8b26915a1638404992-480-0.png?0">
 
         <div class="inicio_producto">
-            <a href="https://beautyblonde.netlify.app/index.html">INICIO</a>
+            <a href="../index.php">INICIO</a>
             <span>/</span>
-            <h3> OLAPLEX</h3>
+            <h3>KITS</h3>
         </div>
-
         <div class="grilla_productos">
-            <!--Olaplex paso 0-->
+            <!--Kit -->
             <div class="producto">
                 <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/03a1-44f2298c291bd92db116467766842076-320-0.jpg">
+                    <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/olaplex_1080x1080_tn-11-d612d562c6178a142615881068554079-240-01-4fd362c25e210d5d2415897502789841-320-0.png">
                     <h3>OLAPLEX PASO 0</h3>
                     <p class="precio">$8600</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes</p>
                 </a>
             </div>
-            <!--Olaplex paso 3-->
+            <!--Kit -->
             <div class="producto">
                 <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/olaplexn3_adelante1-48f6ffef50f074e71d16052771214149-320-0.png">
-                    <h3>OLAPLEX PASO 3</h3>
+                    <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/argan-kit-ossono-ampollas-serum-brillo-mascara-y-shampoo-d_nq_np_345911-mla20658193888_042016-f1-713486632bc1b45dbc15881921923645-320-0.jpg">
+                    <h3>OLAPLEX PASO 0</h3>
                     <p class="precio">$8600</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes</p>
                 </a>
             </div>
-            <!--Olaplex paso 4-->
+            <!--Kit -->
             <div class="producto">
                 <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/n4a1-e0053534db9f4c813d16052775129921-320-0.jpg">
-                    <h3>OLAPLEX PASO 4</h3>
+                    <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t172705-85211-c354c575ee7841f4fb15881932067136-320-0.png">
+                    <h3>OLAPLEX PASO 0</h3>
                     <p class="precio">$8600</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes</p>
                 </a>
             </div>
-            <!--Olaplex paso 4P-->
+            <!--Kit -->
             <div class="producto">
                 <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/4p-a1-e36916682150d6a6c716365703307935-320-0.jpg">
-                    <h3>OLAPLEX PASO 4</h3>
-                    <p class="precio">$8600</p>
-                    <p class="cuotas"><span>3</span> cuotas sin interes</p>
-                </a>
-            </div>
-            <!--Olaplex paso 5-->
-            <div class="producto">
-                <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/n5a1-9f59db78816b12184016057002227114-320-0.jpg">
-                    <h3>OLAPLEX PASO 5</h3>
-                    <p class="precio">$8600</p>
-                    <p class="cuotas"><span>3</span> cuotas sin interes</p>
-                </a>
-            </div>
-            <!--Olaplex paso 6-->
-            <div class="producto">
-                <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/n6a1-5fb950e4c0b10d139816052778189958-320-0.jpg"
-                        alt="">
-                    <h3>OLAPLEX PASO 6</h3>
-                    <p class="precio">$8600</p>
-                    <p class="cuotas"><span>3</span> cuotas sin interes</p>
-                </a>
-            </div>
-            <!--Olaplex paso 7-->
-            <div class="producto">
-                <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/n7a1-837b1ec0ab9c880b6e16052779572716-320-0.jpg">
-                    <h3>OLAPLEX PASO 7</h3>
-                    <p class="precio">$8600</p>
-                    <p class="cuotas"><span>3</span> cuotas sin interes</p>
-                </a>
-            </div>
-            <!--Olaplex paso 8-->
-            <div class="producto">
-                <a href="">
-                    <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/040/907/products/701-6e3dcc4a15aba150ad16245647841638-320-0.jpg">
-                    <h3>OLAPLEX PASO 8</h3>
+                    <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t172355-6221-0f207d4f6dd190b44115881925022680-320-0.png">
+                    <h3>OLAPLEX PASO 0</h3>
                     <p class="precio">$8600</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes</p>
                 </a>

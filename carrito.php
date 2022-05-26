@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="carrito">
-        <a href="index.html"><i class="fa-solid fa-angle-left"></i></a>
+        <a href="index.php"><i class="fa-solid fa-angle-left"></i></a>
         <h1>Carrito de compras</h1>
     </header>
     <article class="container">

@@ -19,23 +19,23 @@
         <i onclick="desplegar()" class="fa-solid fa-xmark"></i>
     </div>
     <header class="individual">
-        <a href="https://beautyblonde.netlify.app/index.html"><h1>Beauty Blonde</h1></a>
+        <a href="../index.php"><h1>Beauty Blonde</h1></a>
         <button onclick="desplegar()" class="busqueda">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </header>
     <div class="corrector_header"></div>
     <nav class="nav">
-        <a href="https://beautyblonde.netlify.app/index.html">INICIO</a>
-        <a href="https://beautyblonde.netlify.app/productos.html" style="border-bottom: 2px solid #CCAC5C;">PRODUCTOS</a>
-        <a href="https://beautyblonde.netlify.app/carrito.html">CARRITO <span id="productos_carrito">0</span></a>
+        <a href="../index.php">INICIO</a>
+        <a href="../productos.php" style="border-bottom: 2px solid #CCAC5C;">PRODUCTOS</a>
+        <a href="../carrito.php">CARRITO <span id="productos_carrito">0</span></a>
     </nav>
     <div class="corrector_nav"></div>
     <article>
         <img id="imagen_BB" src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/themes/common/logo-1912906712-1638404992-8c28f8e847fe06ba534dff5d8b26915a1638404992-480-0.png?0">
 
         <div class="inicio_producto">
-            <a href="https://beautyblonde.netlify.app/index.html">INICIO</a>
+            <a href="../index.php">INICIO</a>
             <span>/</span>
             <h3>FRILAYP</h3>
         </div>
