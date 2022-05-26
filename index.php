@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Blonde</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="busqueda_desplegada">
-        <input type="text" placeholder="Buscá productos, kits, y más...">
-        <i onclick="desplegar()" class="fa-solid fa-xmark"></i>
-    </div>
-
-    <header class="index">
-        <a href="index.php"><h1>Beauty Blonde</h1></a>
-        <button onclick="desplegar()" class="busqueda">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-    </header>
-
-    <div class="corrector_header"></div>
-
-    <nav class="nav">
-        <a href="index.php" style="border-bottom: 2px solid #CCAC5C;">INICIO</a>
-        <a href="productos.php">PRODUCTOS</a>
-        <a href="carrito.php">CARRITO <span id="productos_carrito">0</span></a>
-    </nav>
-
-    <div class="corrector_nav"></div>
+<?php include 'includes/header.php' ?>
 
     <article>
         <div class="imagenes_corredizas">
@@ -61,13 +25,13 @@
 
             <div class="lista_productos">
                 <ul>
-                    <a href="productos/olaplex.php"><li>OLAPLEX</li></a>
-                    <a href="productos/ossono.php"><li>ARGAN</li></a>
-                    <a href="productos/ossono.php"><li>LINO</li></a>
-                    <a href="productos/ossono.php"><li>KERATINA</li></a>
-                    <a href="productos/frilayp.php"><li>BAÑO DE CREMA</li></a>
-                    <a href="productos/kits.php"><li>KITS</li></a>
-                    <a href="productos/frilayp.php"><li>SHAMPOO NEUTRO</li></a>
+                    <a href="olaplex.php"><li>OLAPLEX</li></a>
+                    <a href="ossono.php"><li>ARGAN</li></a>
+                    <a href="ossono.php"><li>LINO</li></a>
+                    <a href="ossono.php"><li>KERATINA</li></a>
+                    <a href="frilayp.php"><li>BAÑO DE CREMA</li></a>
+                    <a href="kits.php"><li>KITS</li></a>
+                    <a href="frilayp.php"><li>SHAMPOO NEUTRO</li></a>
                 </ul>
             </div>
         </div>
@@ -137,21 +101,21 @@
             <p>¡Conocé los kits que tenemos en nuestras tiendas!</p>
 
             <div class="productos_kits">
-                <a href="/productos/producto_final.php" class="kit primero">
+                <a href="producto_final.php" class="kit primero">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t172705-85211-c354c575ee7841f4fb15881932067136-320-0.png">
                     <h3>KIT DE REPARACIÓN Y NUTRICIÓN</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
                 </a>
 
-                <a href="/productos/producto_final.php" class="kit segundo inactive">
+                <a href="producto_final.php" class="kit segundo inactive">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t173227-4051-0590d07363cd1515b815881929633402-320-0.png">
                     <h3>KIT KERATINA</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
                 </a>
 
-                <a href="/productos/producto_final.php" class="kit tercero inactive">
+                <a href="producto_final.php" class="kit tercero inactive">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/85211241_2566341700279955_4556114935528030208_o1-27b964c26c1e8395c815903327833011-320-0.png">
                     <h3>KIT OLAPLEX</h3>
                     <p class="precio">$16.500</p>
@@ -166,21 +130,21 @@
             </div>
 
             <div class="productos_kits_web">
-                <a href="productos/producto_final.php" class="kit primero">
+                <a href="producto_final.php" class="kit primero">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t172705-85211-c354c575ee7841f4fb15881932067136-320-0.png">
                     <h3>KIT DE REPARACIÓN Y NUTRICIÓN</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
                 </a>
 
-                <a href="productos/producto_final.php" class="kit segundo">
+                <a href="producto_final.php" class="kit segundo">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/diseno-sin-titulo-2020-04-29t173227-4051-0590d07363cd1515b815881929633402-320-0.png">
                     <h3>KIT KERATINA</h3>
                     <p class="precio">$16.500</p>
                     <p class="cuotas"><span>3</span> cuotas sin interes de <span>$5500</span></p>
                 </a>
 
-                <a href="productos/producto_final.php" class="kit tercero">
+                <a href="producto_final.php" class="kit tercero">
                     <img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/168/400/products/85211241_2566341700279955_4556114935528030208_o1-27b964c26c1e8395c815903327833011-320-0.png">
                     <h3>KIT OLAPLEX</h3>
                     <p class="precio">$16.500</p>
@@ -188,7 +152,7 @@
                 </a>
 
             </div>
-            <a href="productos/kits.php" class="btn">VER TODOS LOS KITS</a>
+            <a href="kits.php" class="btn">VER TODOS LOS KITS</a>
         </div>
     </article>
 

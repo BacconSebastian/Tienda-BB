@@ -260,13 +260,13 @@ article ul{
     .lista_productos ul li{
         width: 22rem;
         font-size: 1.5rem;
+        border: 2px solid var(--first-color);
     }
     .lista_productos a{
         border: 2px solid var(--first-color);
         transition: all 0.5s ease;
     }
     .lista_productos a:hover{
-        border: 2px solid var(--first-color);
         transition: all 0.5s ease;
     }
     .lista_productos a:hover li{
@@ -610,4 +610,117 @@ footer p{
 }
 .carrito_vacio h3{
     font-weight: 400;
+}
+
+
+/******************************************** PRODUCTOS POR CATEGORIA ********************************************/
+
+/********************** General **********************/
+
+article #imagen_BB{
+    margin: 2rem 0rem;
+    padding: 2rem 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+article #imagen_producto{
+    width: 100%;
+}
+@media(min-width:768px){
+    article #imagen_BB{
+        width: 25rem;
+        height: 15rem;
+    }
+}
+.inicio_producto{
+    background-color: var(--second_color);
+    font-size: 1.25rem;
+    display: flex;
+    padding: 1rem 0rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--fourth_color);
+    border-top: 2px solid var(--fourth_color);
+}
+.inicio_producto a{
+    color: var(--third_color);
+    margin: 1rem;
+}
+.inicio_producto span{
+    color: var(--third_color);
+    margin: 1rem;
+}
+.inicio_producto h3{
+    margin: 1rem;
+    color: var(--third_color);
+}
+.grilla_productos{
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.producto{
+    display: inline-block;
+    text-align: center;
+    width: 15rem;
+    padding: 1rem;
+    border: 0.5px solid var(--fourth_color);
+    margin: 0.5rem;
+    border-radius: 2px;
+}
+.producto h3{
+    color: var(--third_color);
+}
+.producto p{
+    color: var(--third_color);
+}
+.producto img{
+    width: 12.5rem;
+    height: 12.5rem;
+}
+.precio{
+    font-weight: bold;
+    color: var(--third_color);
+}
+.divisores{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color:var(--first-color);
+}
+.divisores h3{
+    color: white;
+}
+@media (min-width:768px) {
+    .grilla_productos{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .grilla_productos .producto{
+        margin: 1rem;
+        width: 30rem;
+        padding: 3rem;
+        transition: all 0.5s ease;
+    }
+    .grilla_productos .producto:hover{
+        box-shadow: 1px 1px 5px var(--first-color);
+    }
+    .grilla_productos h3{
+        margin-top: 2rem;
+    }
+    .grilla_productos h3, .grilla_productos p{
+        font-size: 1.50rem;
+    }
+    .divisores{
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        width: 110rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .divisores h3{
+        margin: 0rem;
+    }
 }
